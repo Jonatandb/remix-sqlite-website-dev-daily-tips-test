@@ -67,6 +67,14 @@ export default function Index() {
                 </Link>
               </div>
 
+              <div className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8">
+                <Link
+                  to="/posts"
+                  className="text-xl text-blue-600 underline"
+                >
+                  Posts
+                </Link>
+              </div>
 
               <a href="https://remix.run">
                 <img
