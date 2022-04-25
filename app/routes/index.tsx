@@ -36,7 +36,7 @@ export default function Index() {
                     View Notes for {user.email}
                   </Link>
                 ) : (
-                  <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
+                  <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-4 sm:gap-5 sm:space-y-0">
                     <Link
                       to="/join"
                       className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
@@ -45,36 +45,37 @@ export default function Index() {
                     </Link>
                     <Link
                       to="/login"
-                      className="flex items-center justify-center rounded-md bg-yellow-500 px-4 py-3 font-medium text-white hover:bg-yellow-600  "
+                      className="flex items-center  justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
                     >
                       Log In
                     </Link>
+
+                    <Link
+                      to="/about"
+                      className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
+                    >
+                      About
+                    </Link>
+
+                    <Link
+                      to="/posts"
+                      className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
+                    >
+                      Posts
+                    </Link>
                   </div>
                 )}
+
               </div>
 
               { /*
-                  Remix - A first look:
-                    https://daily-dev-tips.com/posts/remix-a-first-look/?utm_source=Daily+Dev+Tips&utm_medium=email&utm_campaign=mailinglist
+
+                  Remix - A first look:     https://daily-dev-tips.com/posts/remix-a-first-look/
+                  Remix and data loading:   https://daily-dev-tips.com/posts/remix-and-data-loading/
+                  Remix and dynamic routes: https://daily-dev-tips.com/posts/remix-and-dynamic-routes/
+
                 */
               }
-              <div className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8">
-                <Link
-                  to="/about"
-                  className="text-xl text-blue-600 underline"
-                >
-                  About
-                </Link>
-              </div>
-
-              <div className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8">
-                <Link
-                  to="/posts"
-                  className="text-xl text-blue-600 underline"
-                >
-                  Posts
-                </Link>
-              </div>
 
               <a href="https://remix.run">
                 <img

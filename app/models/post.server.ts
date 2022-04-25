@@ -16,3 +16,9 @@ export async function getPosts(): Promise<Array<Post>> {
     },
   ];
 }
+
+
+export async function getPost(slug: string | undefined): Promise<Post> {
+  const posts = await getPosts();
+  return posts.filter((post) => post.slug === slug)[0];
+}

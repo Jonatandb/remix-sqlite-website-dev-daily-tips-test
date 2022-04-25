@@ -16,8 +16,8 @@ export const loader = async () => {
 export default function Posts() {
   const { posts } = useLoaderData() as LoaderData;
   return (
-    <main>
-      <h1>All my posts</h1>
+    <main className="mx-auto max-w-4xl">
+      <h1 className="my-6 border-b-2 text-center text-3xl">All my posts</h1>
       <ul>
         {posts.map((post) => (
           <li key={post.slug}>
