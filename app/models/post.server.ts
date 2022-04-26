@@ -1,24 +1,9 @@
-type Post = {
-  slug: string,
-  title: string,
-};
+import { prisma } from '~/db.server';
 
-
-export async function getPosts(): Promise<Array<Post>> {
-  return [
-    {
-      slug: 'post-1',
-      title: 'My First Post',
-    },
-    {
-      slug: 'post-2',
-      title: 'The second post I ever made',
-    },
-  ];
+export async function getPosts() {
+  return prisma.post.findMany();
 }
 
-
-export async function getPost(slug: string | undefined): Promise<Post> {
-  const posts = await getPosts();
-  return posts.filter((post) => post.slug === slug)[0];
+export async function getPost(slug: string) {
+  return prisma.post.findUnique({ where: { slug } });
 }

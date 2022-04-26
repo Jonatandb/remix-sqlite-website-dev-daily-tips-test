@@ -170,3 +170,15 @@ This project uses ESLint for linting. That is configured in `.eslintrc.js`.
 ### Formatting
 
 We use [Prettier](https://prettier.io/) for auto-formatting in this project. It's recommended to install an editor plugin (like the [VSCode Prettier plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)) to get auto-formatting on save. There's also a `npm run format` script you can run to format all files in the project.
+
+---
+
+### Researched sites:
+
+- https://stackoverflow.com/questions/68476229/m1-related-prisma-cant-reach-database-server-at-database5432
+- https://www.prisma.io/docs/reference/database-reference/connection-urls
+- https://stackoverflow.com/questions/3582552/what-is-the-format-for-the-postgresql-connection-string-url
+- https://davelarrabee.com/a-simple-crud-app-in-remix/
+- https://www.prisma.io/docs/concepts/database-connectors/postgresql
+- https://www.thisdot.co/blog/connecting-to-postgresql-with-node-js
+- https://github.com/rebelchris/remix-starter/blob/prisma/prisma/schema.prisma
