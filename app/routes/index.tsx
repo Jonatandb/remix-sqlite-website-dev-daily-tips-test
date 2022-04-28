@@ -2,6 +2,15 @@ import { Link } from "@remix-run/react";
 
 import { useOptionalUser } from "~/utils";
 
+/*
+        Remix - A first look:               https://daily-dev-tips.com/posts/remix-a-first-look/
+        Remix and data loading:             https://daily-dev-tips.com/posts/remix-and-data-loading/
+        Remix and dynamic routes:           https://daily-dev-tips.com/posts/remix-and-dynamic-routes/
+        Changing to Postgres Datasource:    https://daily-dev-tips.com/posts/adding-prisma-to-remix/
+        Remix and creating new posts:       https://daily-dev-tips.com/posts/remix-and-creating-new-posts/
+        Remix shared layouts, a first look: https://daily-dev-tips.com/posts/remix-shared-layouts-a-first-look/
+*/
+
 export default function Index() {
   const user = useOptionalUser();
   return (
@@ -36,7 +45,7 @@ export default function Index() {
                     View Notes for {user.email}
                   </Link>
                 ) : (
-                  <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-4 sm:gap-5 sm:space-y-0">
+                  <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
                     <Link
                       to="/join"
                       className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
@@ -49,33 +58,27 @@ export default function Index() {
                     >
                       Log In
                     </Link>
-
-                    <Link
-                      to="/about"
-                      className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
-                    >
-                      About
-                    </Link>
-
-                    <Link
-                      to="/posts"
-                      className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
-                    >
-                      Posts
-                    </Link>
                   </div>
                 )}
 
               </div>
+              <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
+                <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
+                  <Link
+                    to="/about"
+                    className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
+                  >
+                    About
+                  </Link>
 
-              { /*
-
-                  Remix - A first look:     https://daily-dev-tips.com/posts/remix-a-first-look/
-                  Remix and data loading:   https://daily-dev-tips.com/posts/remix-and-data-loading/
-                  Remix and dynamic routes: https://daily-dev-tips.com/posts/remix-and-dynamic-routes/
-
-                */
-              }
+                  <Link
+                    to="/posts"
+                    className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
+                  >
+                    Posts<abbr className="text-sm sm:px-1 text-red-700 underline shadow-xl" title="PostgreSQL server must be running!!">*</abbr>
+                  </Link>
+                </div>
+              </div>
 
               <a href="https://remix.run">
                 <img
