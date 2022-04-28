@@ -18,7 +18,15 @@ export default function Posts() {
   return (
     <main className="mx-auto max-w-4xl">
       <h1 className="my-6 border-b-2 text-center text-3xl">All my posts</h1>
-      <ul>
+      <p className='mb-6 ml-2'>
+        <Link
+          to="/posts/new"
+          className='rounded bg-blue-500 py-2 px-4 text-white hover:bg-blue-600 focus:bg-blue-400 disabled:bg-blue-300'
+        >
+          Create Post
+        </Link>
+      </p>
+      <ul className='ml-2'>
         {posts.map((post) => (
           <li key={post.slug}>
             <Link to={post.slug} className='text-blue-600 underline'>
@@ -27,14 +35,7 @@ export default function Posts() {
           </li>
         ))}
       </ul>
-      <p className='text-right'>
-        <Link
-          to="/posts/new"
-          className='rounded bg-blue-500 py-2 px-4 text-white hover:bg-blue-600 focus:bg-blue-400 disabled:bg-blue-300'
-        >
-          Create Post
-        </Link>
-      </p>
+
     </main>
   );
 }

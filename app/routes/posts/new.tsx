@@ -17,11 +17,11 @@ export const action = async ({ request }) => {
 
 export default function NewPost() {
   return (
-    <Form method='post'>
+    <Form method='post' className='mt-4 mr-2 ml-2'>
       <p>
         <label>
           Post Title:{' '}
-          <input type='text' name='title' className={inputClassName} />
+          <input type='text' name='title' className={inputClassName} required />
         </label>
       </p>
       <p>
@@ -36,12 +36,12 @@ export default function NewPost() {
           <input type='text' name='content' className={inputClassName} />
         </label>
       </p>
-      <p className='text-right'>
+      <p className='mt-2'>
         <button
           type='submit'
           className='rounded bg-blue-500 py-2 px-4 text-white hover:bg-blue-600 focus:bg-blue-400 disabled:bg-blue-300'
         >
-          Create Post
+          Create
         </button>
       </p>
     </Form>
