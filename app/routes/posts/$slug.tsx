@@ -18,8 +18,9 @@ export default function PostSlug() {
   return (
     <main className="mx-auto max-w-4xl">
       <h1 className="my-6 border-b-2 text-center text-3xl">
-        The post title: {post.title}
+        <span className='text-blue-500'>{post?.title}</span>
       </h1>
+      <p className="mt-6 text-xl text-red-700 ml-4">{post?.content}</p>
     </main>
   );
 }

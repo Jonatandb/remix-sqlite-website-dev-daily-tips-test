@@ -12,7 +12,7 @@ export const action = async ({ request }) => {
   const content = formData.get("content");
 
   await createPost({ title, slug, content });
-  return redirect("/posts");
+  return redirect("/posts/admin");
 };
 
 export default function NewPost() {
@@ -27,13 +27,13 @@ export default function NewPost() {
       <p>
         <label>
           Post Slug:{' '}
-          <input type='text' name='slug' className={inputClassName} />
+          <input type='text' name='slug' className={inputClassName} required />
         </label>
       </p>
       <p>
         <label>
           Content:{' '}
-          <input type='text' name='content' className={inputClassName} />
+          <input type='text' name='content' className={inputClassName} required />
         </label>
       </p>
       <p className='mt-2'>
