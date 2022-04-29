@@ -175,6 +175,7 @@ We use [Prettier](https://prettier.io/) for auto-formatting in this project. It'
 
 ### Researched sites:
 
+- https://blog.logrocket.com/understanding-routes-route-nesting-remix/
 - https://stackoverflow.com/questions/68476229/m1-related-prisma-cant-reach-database-server-at-database5432
 - https://www.prisma.io/docs/reference/database-reference/connection-urls
 - https://stackoverflow.com/questions/3582552/what-is-the-format-for-the-postgresql-connection-string-url
