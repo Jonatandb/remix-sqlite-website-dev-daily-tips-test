@@ -175,6 +175,8 @@ We use [Prettier](https://prettier.io/) for auto-formatting in this project. It'
 
 ### Researched sites:
 
+- https://github.com/parallax/jsPDF
+- https://parall.ax/products/jspdf
 - https://blog.logrocket.com/understanding-routes-route-nesting-remix/
 - https://stackoverflow.com/questions/68476229/m1-related-prisma-cant-reach-database-server-at-database5432
 - https://www.prisma.io/docs/reference/database-reference/connection-urls
