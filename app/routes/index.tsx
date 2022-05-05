@@ -1,19 +1,25 @@
-import { Link } from "@remix-run/react";
-
-import { useOptionalUser } from "~/utils";
-
 /*
-        Remix - A first look:               https://daily-dev-tips.com/posts/remix-a-first-look/
-        Remix and data loading:             https://daily-dev-tips.com/posts/remix-and-data-loading/
-        Remix and dynamic routes:           https://daily-dev-tips.com/posts/remix-and-dynamic-routes/
-        Changing to Postgres Datasource:    https://daily-dev-tips.com/posts/adding-prisma-to-remix/
-        Remix and creating new posts:       https://daily-dev-tips.com/posts/remix-and-creating-new-posts/
-        Remix shared layouts, a first look: https://daily-dev-tips.com/posts/remix-shared-layouts-a-first-look/
-        Rethinking our Remix admin routes:  https://daily-dev-tips.com/posts/rethinking-our-remix-admin-routes/
+        Remix - A first look:                         https://daily-dev-tips.com/posts/remix-a-first-look/
+        Remix and data loading:                       https://daily-dev-tips.com/posts/remix-and-data-loading/
+        Remix and dynamic routes:                     https://daily-dev-tips.com/posts/remix-and-dynamic-routes/
+        Changing to Postgres Datasource:              https://daily-dev-tips.com/posts/adding-prisma-to-remix/
+        Remix and creating new posts:                 https://daily-dev-tips.com/posts/remix-and-creating-new-posts/
+        Remix shared layouts, a first look:           https://daily-dev-tips.com/posts/remix-shared-layouts-a-first-look/
+        Rethinking our Remix admin routes:            https://daily-dev-tips.com/posts/rethinking-our-remix-admin-routes/
+        Remix pathless layout routes                  https://daily-dev-tips.com/posts/remix-pathless-layout-routes/
+        Remix nested URLs without the layout nesting  https://daily-dev-tips.com/posts/remix-nested-urls-without-the-layout-nesting/
+        Resource routes in Remix                      https://daily-dev-tips.com/posts/resource-routes-in-remix/
+        Handling errors in Remix                      https://daily-dev-tips.com/posts/handling-errors-in-remix/
+        Remix loading data from an external API       https://daily-dev-tips.com/posts/remix-loading-data-from-an-external-api/
 */
 
+import { Link } from "@remix-run/react";
+import { useOptionalUser } from "~/utils";
+
 export default function Index() {
+
   const user = useOptionalUser();
+
   return (
     <main className="relative min-h-screen bg-white sm:flex sm:items-center sm:justify-center">
       <div className="relative sm:pb-16 sm:pt-8">
