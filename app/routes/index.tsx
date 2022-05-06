@@ -11,6 +11,7 @@
         Resource routes in Remix                      https://daily-dev-tips.com/posts/resource-routes-in-remix/
         Handling errors in Remix                      https://daily-dev-tips.com/posts/handling-errors-in-remix/
         Remix loading data from an external API       https://daily-dev-tips.com/posts/remix-loading-data-from-an-external-api/
+        The amazing SEO powers of Remix               https://daily-dev-tips.com/posts/the-amazing-seo-powers-of-remix/
 */
 
 import { Link } from "@remix-run/react";

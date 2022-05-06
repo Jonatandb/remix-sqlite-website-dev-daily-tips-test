@@ -45,7 +45,7 @@ export function ErrorBoundary({ error }) {
         <Links />
       </head>
       <body className='m-4'>
-        <h1 className='text-2xl'>Something went wrong!</h1>
+        <h1 className='text-2xl'>Something went wrong! 😥</h1>
         <p>{error.message}</p>
         <Scripts />
       </body>
