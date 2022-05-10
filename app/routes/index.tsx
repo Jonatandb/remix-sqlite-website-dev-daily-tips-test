@@ -14,6 +14,7 @@
         The amazing SEO powers of Remix               https://daily-dev-tips.com/posts/the-amazing-seo-powers-of-remix/
         Remix forms a deeper look                     https://daily-dev-tips.com/posts/remix-forms-a-deeper-look/
         Handling errors in Remix forms                https://daily-dev-tips.com/posts/handling-errors-in-remix-forms/
+        Adding an animated state to our Remix form    https://daily-dev-tips.com/posts/adding-an-animated-state-to-our-remix-form/
 */
 
 import { Link } from "@remix-run/react";
