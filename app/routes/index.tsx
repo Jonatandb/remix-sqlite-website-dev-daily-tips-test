@@ -15,6 +15,7 @@
         Remix forms a deeper look                     https://daily-dev-tips.com/posts/remix-forms-a-deeper-look/
         Handling errors in Remix forms                https://daily-dev-tips.com/posts/handling-errors-in-remix-forms/
         Adding an animated state to our Remix form    https://daily-dev-tips.com/posts/adding-an-animated-state-to-our-remix-form/
+        Rendering markdown in Remix                   https://daily-dev-tips.com/posts/rendering-markdown-in-remix/
 */
 
 import { Link } from "@remix-run/react";
