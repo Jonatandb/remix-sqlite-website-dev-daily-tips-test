@@ -18,6 +18,7 @@
         Rendering markdown in Remix                   https://daily-dev-tips.com/posts/rendering-markdown-in-remix/
         Adding tailwind typography plugin in Remix    https://daily-dev-tips.com/posts/adding-tailwind-typography-plugin-in-remix/
         Shared layouts for markdown files in Remix    https://daily-dev-tips.com/posts/shared-layouts-for-markdown-files-in-remix/
+        Remix Markdown overview page                  https://daily-dev-tips.com/posts/remix-markdown-overview-page/
 */
 
 import { Link } from "@remix-run/react";
